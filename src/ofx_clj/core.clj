@@ -2,14 +2,14 @@
   (:require [clojure.java.io :as io])
   (:import [java.io FileInputStream StringReader]
           [java.util Date]
-          [net.sf.ofx4j.io AggregateUnmarshaller]
-          [net.sf.ofx4j.domain.data MessageSetType ResponseEnvelope ResponseMessageSet]
-          [net.sf.ofx4j.domain.data.signon SignonResponse FinancialInstitution]
-          [net.sf.ofx4j.domain.data.common Status StatusCode TransactionList Transaction
+          [com.webcohesion.ofx4j.io AggregateUnmarshaller]
+          [com.webcohesion.ofx4j.domain.data MessageSetType ResponseEnvelope ResponseMessageSet]
+          [com.webcohesion.ofx4j.domain.data.signon SignonResponse FinancialInstitution]
+          [com.webcohesion.ofx4j.domain.data.common Status StatusCode TransactionList Transaction
            Currency Payee BalanceInfo]
-          [net.sf.ofx4j.domain.data.banking BankStatementResponseTransaction
+          [com.webcohesion.ofx4j.domain.data.banking BankStatementResponseTransaction
            BankStatementResponse BankAccountDetails]
-          [net.sf.ofx4j.domain.data.creditcard CreditCardAccountDetails 
+          [com.webcohesion.ofx4j.domain.data.creditcard CreditCardAccountDetails 
            CreditCardResponseMessageSet CreditCardStatementResponseTransaction
            CreditCardStatementResponse]))
 
